@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="By:Adrish|Shreyansh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slot-Machine</title>
+</head>
+<body>
+    <main class="outer-container">
+        <header class="heading">
+        <h1>Slot Machine</h1>
+        </header>
+        <div class="machine-body">
+            <div class="balance"> 
+                <label for="score" >Balance:</label>
+                <input type="text" id="score" name="score" value="500" readonly class="score-display">
+            </div>
+            <div class="machine-spin"> 
+                <div class="parent-reel">
+                    <div class="reel reel-1">
+                        <div id="reel-1-number">1</div>
+                    </div>
+                    <div class="reel reel-2">
+                        <div id="reel-2-number">1</div>
+                    </div>
+                    <div class="reel reel-3">
+                        <div id="reel-3-number">1</div>
+                    </div>
+                 </div><!-- parent-reel -->
+            </div><!-- machine-spin -->
+            <div class="buttons">
+                <button id="spin">SPIN</button>
+                <button id="reset">RESET</button>
+            </div>
+            <div class="output">
+                <label for="log">STATUS</label>
+                <textarea name="log" id="log" readonly rows="4" cols="30"> Spin to check Luck....</textarea>
+            </div>
+        </div><!-- machine-body -->
+    </main><!-- outer-container -->
+    
+    <button id="reverse"onclick="window.location.assign('index.html')">Go Back</button>
+    <script src="script.js"></script>
+    
+</body>
+</html>
